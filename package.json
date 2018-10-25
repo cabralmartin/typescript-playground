@@ -1,0 +1,20 @@
+{
+  "name": "tsc-viewer",
+  "version": "0.0.1",
+  "description": "JIT viewer for TSC",
+  "private": true,
+  "scripts": {
+    "start": "webpack-dev-server --open",
+    "build": "webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.23.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  },
+  "dependencies": {
+    "codemirror": "^5.41.0"
+  }
+}
