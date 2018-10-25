@@ -1,3 +1,4 @@
+const MonacoWebpackPlugin = require('monaco-editor-webpack-plugin');
 const path = require('path');
 
 module.exports = {
@@ -9,5 +10,14 @@ module.exports = {
   devServer: {
     contentBase: './',
     publicPath: '/bin/'
-  }
+  },
+  module: {
+    rules: [{
+        test: /\.css$/, 
+        loader: "style-loader!css-loader"
+    }]
+  },
+  plugins: [
+    new MonacoWebpackPlugin()
+  ]
 };
