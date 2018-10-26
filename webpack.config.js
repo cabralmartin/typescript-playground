@@ -5,11 +5,10 @@ module.exports = {
   entry: './src/index.js',
   output: {
     filename: 'app.js',
-    path: path.resolve(__dirname, 'bin')
+    path: path.resolve(__dirname, 'dist')
   },
   devServer: {
-    contentBase: './',
-    publicPath: '/bin/'
+    contentBase: './dist'
   },
   module: {
     rules: [{
